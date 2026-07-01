@@ -1,87 +1,136 @@
-![Zen Massage](./preview.png)
+<p align="center">
+  <img src="preview.png" width="100%">
+</p>
 
-# Zen Massage Booking
+# 💆 Zen Massage Booking
 
-Aplicación web Full Stack para la gestión de reservas de un centro de masajes...
+Aplicación **Full Stack** desarrollada con **React**, **JavaScript**, **Python**, **Flask**, **SQLAlchemy** y **APIs REST** para la gestión de reservas de un centro de masajes. El proyecto permite consultar servicios, conocer el equipo, reservar citas online y contactar con el centro mediante una interfaz moderna, intuitiva y responsive.
 
-# WebApp boilerplate with React JS and Flask API
+---
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+## 🚀 Tecnologías
 
-- Documentation can be found here: https://4geeks.com/docs/start/react-flask-template
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to Render [in just a few steps here](https://4geeks.com/docs/start/deploy-to-render-com).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+### Frontend
 
-### 1) Installation:
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router
+- Fetch API
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+### Backend
 
-It is recomended to install the backend first, make sure you have Python 3.10, Pipenv and a database engine (Posgress recomended)
+- Python
+- Flask
+- SQLAlchemy
+- SQLite / PostgreSQL
+- REST APIs
+- JWT Authentication
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+### Herramientas
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+- Git
+- GitHub
+- VS Code
+- GitHub Copilot
+- Inteligencia Artificial
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+---
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+## ✨ Características
 
-### Undo a migration
+- 💆 Visualización de servicios de masaje.
+- 📅 Sistema de reservas online.
+- 🕒 Gestión de horarios disponibles.
+- 👥 Presentación del equipo profesional.
+- 📩 Formulario de contacto.
+- 📱 Diseño responsive para ordenador, tablet y móvil.
+- 🔗 Integración entre frontend y backend mediante APIs REST.
+- 🗄️ Gestión de datos con SQLAlchemy.
 
-You are also able to undo a migration by running
+---
 
-```sh
-$ pipenv run downgrade
+## 📸 Vista previa
+
+<p align="center">
+  <img src="preview.png" width="100%">
+</p>
+
+---
+
+## 🛠️ Instalación
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/beatriz24BCN/zen-massage-booking.git
+cd zen-massage-booking
 ```
 
-### Backend Populate Table Users
+### Frontend
 
-To insert test users in the database execute the following command:
-
-```sh
-$ flask insert-test-users 5
+```bash
+npm install
+npm run dev
 ```
 
-And you will see the following message:
+### Backend
 
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
+```bash
+pipenv install
+pipenv run start
 ```
 
-### **Important note for the database and the data inside it**
+---
 
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
+## 📂 Estructura del proyecto
 
-### Front-End Manual Installation:
+```
+📦 zen-massage-booking
+├── frontend
+│   ├── React
+│   ├── Componentes
+│   ├── Páginas
+│   └── Estilos
+│
+├── backend
+│   ├── Flask
+│   ├── Models
+│   ├── Routes
+│   ├── APIs REST
+│   └── SQLAlchemy
+│
+└── Base de datos
+```
 
--   Make sure you are using node version 20 and that you have already successfully installed and runned the backend.
+---
 
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
+## 🤖 Desarrollo con Inteligencia Artificial
 
-## Publish your website!
+Este proyecto ha sido desarrollado aplicando herramientas de **Inteligencia Artificial**, como **GitHub Copilot** e **IA generativa**, para agilizar el desarrollo, optimizar el código, resolver incidencias y mejorar la productividad durante todo el proceso.
 
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://4geeks.com/docs/start/deploy-to-render-com).
+---
 
-### Contributors
+## 👩‍💻 Autora
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+**Beatriz Campos**
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+💼 LinkedIn  
+https://www.linkedin.com/in/bea-campos-5670a633b
+
+🐙 GitHub  
+https://github.com/beatriz24BCN
+
+📧 Email  
+beatriz24bcn@hotmail.com
+
+---
+
+## 📌 Repositorio
+
+https://github.com/beatriz24BCN/zen-massage-booking
+
+---
+
+⭐ Si te ha gustado el proyecto, no olvides darle una estrella al repositorio.
