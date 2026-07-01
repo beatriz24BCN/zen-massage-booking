@@ -51,13 +51,6 @@ Aplicación **Full Stack** desarrollada con **React**, **JavaScript**, **Python*
 
 ---
 
-## 📸 Vista previa
-
-<p align="center">
-  <img src="preview.png" width="100%">
-</p>
-
----
 
 ## 🛠️ Instalación
 
