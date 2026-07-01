@@ -124,6 +124,5 @@ beatriz24bcn@hotmail.com
 
 https://github.com/beatriz24BCN/zen-massage-booking
 
----
 
-⭐ Si te ha gustado el proyecto, no olvides darle una estrella al repositorio.
+
